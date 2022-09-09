@@ -1,27 +1,27 @@
 417
 00:28:05,800 --> 00:28:10,620
 Other useful mappings are,
-还有其他有用的映射
+还有另一些有用的映射
 
 418
 00:28:10,680 --> 00:28:15,460
 you might want to alias a command to itself
-比如 你可能想给它自己添加一个别名
+比如 你可能想给指令本身添加一个别名
 
 419
 00:28:15,740 --> 00:28:17,520
 but with a default flag.
-但是带有一些缺省的参数
+但是带有缺省的参数
 
 420
 00:28:17,520 --> 00:28:21,100
 So here what is going on is I'm creating an alias
-所以接下来 我要给 `mv` 创建一个别名代替它本身
+所以接下来 我要给 `mv` 创建一个别名
 
 421
 00:28:21,100 --> 00:28:23,100
 which is an alias for the move command,
-
+用来代替它自己
 
 422
 00:28:23,300 --> 00:28:29,780
@@ -39,7 +39,7 @@ and look at it, it stands for "interactive".
 00:28:34,780 --> 00:28:39,880
 And what it will do is it will prompt
 me before I do an overwrite.
-这可以让程序在我覆写时弹出一个提示
+它会在覆盖文件之前弹出一个提示
 
 425
 00:28:39,880 --> 00:28:44,420
@@ -87,12 +87,12 @@ and it's using that to ask me
 433
 00:29:07,700 --> 00:29:11,780
 And I can say no, I don't want to lose that file.
-这样依赖，我如果不想失去原来的文件，就可以拒绝
+我如果不想失去原来的文件，就可以拒绝
 
 434
 00:29:12,180 --> 00:29:15,820
 Lastly, you can use "alias move"
-最后 你可以执行 alias move 
+最后 你可以执行 alias mv 
 
 435
 00:29:15,820 --> 00:29:18,520
@@ -159,19 +159,19 @@ You will find that most shell command programs
 00:29:56,880 --> 00:30:01,440
 will use some sort of text
 based configuration file.
-都会使用某种配置文件
+都会使用某种文本配置文件
 
 447
 00:30:01,440 --> 00:30:06,740
 And this is what we usually call "dotfiles", because
 they start with a dot for historical reasons.
-它们通常被称为 "dotfiles"
+它们通常被称为点文件
 因为历史包袱让它们的文件名以点开头
 
 448
 00:30:07,060 --> 00:30:13,160
 So for bash in our case, which is a shell,
-我们以 bash 为例
+我们以 bash 这种 shell 为例
 
 449
 00:30:13,160 --> 00:30:15,560
@@ -236,13 +236,13 @@ So it matters where you config file is,
 459
 00:30:52,200 --> 00:30:55,260
 your config file needs to be in your home folder.
-你的配置文件需要在家目录才能生效
+你的配置文件在家目录才能生效
 
 460
 00:30:55,640 --> 00:31:00,940
 So your configuration file for
 bash will live in that "~",
-你的 bash 配置文件在 ~ 
+bash 的配置文件在 ~ 
 
 461
 00:31:00,940 --> 00:31:03,940
@@ -252,7 +252,7 @@ which will expand to your home directory,
 462
 00:31:03,940 --> 00:31:05,560
 and then bashrc.
-然后指向 .bashrc
+然后是 .bashrc
 
 463
 00:31:06,160 --> 00:31:08,840
@@ -274,7 +274,6 @@ loaded at the beginning when this
 466
 00:31:22,300 --> 00:31:24,300
 bash program is started.
-^
 
 467
 00:31:24,700 --> 00:31:31,200
@@ -287,20 +286,20 @@ aliases, they can have a lot of parts of configuration.
 00:31:31,390 --> 00:31:35,729
 So for example here, I have a prompt
 which is fairly useless.
-比如说，我觉得这个提示符相当没用
+比如说 我觉得这个提示符相当没用
 
 469
 00:31:35,730 --> 00:31:38,429
 It has just given me the name
 of the shell, which is bash,
-它只是告诉我这个 shell 的名字，也就是 bash
+它只是告诉我这个 shell 的名字，显然是 bash
 
 470
 00:31:38,640 --> 00:31:43,820
 and the version, which is 5.0. I don't
 want this to be displayed and
 还有它的版本， 5.0
-我不想看见这些信息被显示出来
+我不想看见这些信息
 
 471
 00:31:44,360 --> 00:31:48,540
@@ -311,7 +310,7 @@ is just an environment variable.
 472
 00:31:48,600 --> 00:31:53,120
 So the "PS1" is just the prompt string
-所以 PS1 就是 shell 的提示符
+变量 PS1 就是 shell 的提示符
 
 473
 00:31:53,710 --> 00:31:55,480
@@ -367,7 +366,7 @@ where the
 482
 00:32:30,370 --> 00:32:32,939
 working directory that we are is in, and
-当前所在的工作目录显示出来
+当前的工作目录显示出来
 
 483
 00:32:34,140 --> 00:32:37,380
@@ -395,7 +394,7 @@ through these files,
 00:32:50,590 --> 00:32:55,740
 there are many other programs. As we saw for
 example in the editors lecture, Vim is also
-还有许多其他的程序也是如此
+许多其他的程序也是如此
 就像编辑器一课中的 vim
 
 488
@@ -494,19 +493,19 @@ Any questions so far?
 504
 00:34:20,900 --> 00:34:22,280
 With dotfiles.
-关于 dotfile 
+关于点文件
 
 505
 00:34:28,040 --> 00:34:35,940
 Okay, it can be a bit daunting knowing that there
 is like this endless wall of configurations,
-没事 面对这么多的的配置
+没关系 面对浩如烟海的配置
 
 506
 00:34:35,940 --> 00:34:40,600
 and how do you go about learning
 about what can be configured?
-还有学习配置它们的方法
+还要学习配置它们的方法
 肯定会有点害怕
 
 507
@@ -536,13 +535,13 @@ different kind of repositories online.
 511
 00:35:01,140 --> 00:35:03,300
 So for example, here we are on GitHub,
-比如说 我们在 GitHub 搜索 dotfiles
+比如说 我们在 GitHub 
 
 512
 00:35:03,300 --> 00:35:06,640
 we search for dotfiles, and
 can see that there are like
-就会有结果显示出来
+搜索 dotfiles 就会有结果显示出来
 
 513
 00:35:06,780 --> 00:35:12,540
@@ -594,7 +593,7 @@ are for git, that will be probably be covered in the
 521
 00:35:38,610 --> 00:35:40,819
 version control lecture tomorrow.
-讲版本控制系统的时侯提到
+讲版本控制系统的时候提到
 
 522
 00:35:41,400 --> 00:35:48,500
@@ -667,7 +666,7 @@ whether using uppercase and lowercase,
 大小写会影响通配符
 
 534
-00:36:30,760 --> 00:36:32,760
+00:36:30,760 --> 00:36:35,360
 and just setting this option in the shell
 for these things to work this way
 那只要这样设置 shell 就可以让它们这样工作
@@ -706,7 +705,7 @@ can be actually very, very informative,
 00:36:54,560 --> 00:36:58,860
 going through this and trying
 to extract useful information.
-浏览它们可以获得不少信息
+可以从中提炼出有用的信息
 
 541
 00:36:59,000 --> 00:37:06,420
@@ -719,13 +718,13 @@ of this and copying this into your config files,
 because maybe things are prettier, but you might
 not really understand what is going on.
 因为虽然效果会很好
-但是你可能不能理解它们如何发挥作用
+但你可能无法真正理解它们的作用
 
 543
 00:37:15,150 --> 00:37:19,579
 Lastly one thing I want to mention
 about dotfiles is that
-关于 dotfile 我最后想说说
+关于点文件我最后想说说
 
 544
 00:37:20,460 --> 00:37:23,390
@@ -768,7 +767,7 @@ and the trick that they are doing is
 00:37:50,280 --> 00:37:54,520
 they are kind of putting all their
 dotfiles in a folder and they are
-把 dotfile 都放在同一个文件夹中
+把点文件都放在同一个文件夹中
 
 552
 00:37:55,200 --> 00:37:59,520
@@ -830,12 +829,12 @@ in your home folder.
 00:38:32,300 --> 00:38:37,360
 So what people usually do is they
 create a dotfiles repository,
-所以人们通常建一个仓库来存放所有 dotfile
+所以人们通常单独建一个仓库
 
 563
 00:38:38,280 --> 00:38:42,160
 and then they have entries here for their
-然后把在这里存放配置文件
+用来存放配置文件
 
 564
 00:38:43,050 --> 00:38:47,239
@@ -879,7 +878,7 @@ and it's useful in this scenario,
 00:39:08,630 --> 00:39:12,600
 but it in general it's a really
 useful tool in UNIX
-但总的来说 它是个在 UNIX 中都十分好用的工具
+但总的来说 它在 UNIX 中是个十分好用的工具
 
 572
 00:39:12,700 --> 00:39:14,700
@@ -905,7 +904,7 @@ And in general, the syntax will be "ln -s"
 00:39:22,840 --> 00:39:29,980
 for specifying a symbolic link and then
 you will put the path to the file
-来指定一个软链接 然后是一个路径
+来指定一个符号链接 然后是一个路径
 
 577
 00:39:30,570 --> 00:39:33,049
@@ -933,7 +932,7 @@ that we're seeing here listed,
 they all amount to doing some sort of this trick, so
 that you can have all your dotfiles neat and tidy
 它们都可以用于这一技巧
-这样你就可以使自己的 dotfile 干净整齐
+这样你就可以使自己的点文件干净整齐
 
 582
 00:39:52,680 --> 00:39:57,829
@@ -950,13 +949,13 @@ find them in their default locations.
 584
 00:40:06,720 --> 00:40:09,020
 Any questions regarding dotfiles?
-对 dotfile 有任何疑问吗
+对点文件有任何疑问吗
 
 585
 00:40:13,200 --> 00:40:20,200
 Do you need to have the dotfiles in your home folder,
 and then also dotfiles in the version control folder?
-需要在家目录保留 dotfile 的同时 在另一个仓库文件夹里存放一样的 dotfile 吗
+需要在家目录保留点文件的同时 在另一个仓库文件夹里存放一样的点文件吗
 
 586
 00:40:20,780 --> 00:40:24,640
@@ -978,7 +977,7 @@ bash 会始终寻找 ~/.bashrc
 589
 00:40:29,560 --> 00:40:33,480
 That's where the program is going to look for.
-这是这个程序会寻找的文件
+这是它会寻找的文件
 
 590
 00:40:33,820 --> 00:40:40,200
@@ -996,7 +995,7 @@ of a special file in UNIX,
 00:40:45,150 --> 00:40:49,609
 that says oh, whenever you want to read
 this file go to this other file.
-它会告诉系统 oh 你要读这个文件的时候 得去找另一个某某文件
+它会告诉系统 你要读这个文件的时候 得去找另一个某某文件
 
 593
 00:40:51,500 --> 00:40:53,440
@@ -1041,13 +1040,13 @@ folder, so they're synced to the cloud,
 00:41:10,759 --> 00:41:15,019
 for example. That's kind of another use case
 where like symlinks could be really useful
-比如说 这也是一个让软链接很有用的情形
+这也是软链接的一个使用情形
 
 601
 00:41:16,240 --> 00:41:21,040
 So you don't need the folder dotfiles
 to be in the home directory, right?
-这样你就不用真的在家目录存放 dotfile 了 对吧
+这样你就不用真的在家目录存放点文件了 对吧
 
 602
 00:41:21,040 --> 00:41:23,820
@@ -1090,7 +1089,7 @@ sooner or later.
 00:41:56,900 --> 00:42:02,238
 And there are a few things that will make your life
 much easier when dealing with remote machines
-并且有些小玩意可以让你在实用远程机器时更加自如
+并且有些小玩意可以让你更容易使用远程机器
 
 610
 00:42:03,180 --> 00:42:05,180
@@ -1101,7 +1100,7 @@ if you know about them.
 00:42:05,220 --> 00:42:08,380
 Right now maybe because you are
 using the Athena cluster,
-现在你可能在用 Athena 
+现在你可能在用 Athena 集群
 
 612
 00:42:08,380 --> 00:42:10,740
@@ -1228,7 +1227,7 @@ sorry, the IP that I'm using,
 634
 00:43:29,860 --> 00:43:32,280
 but you might also see things like
-但你还会看到一些
+但你还会看到一些比如
 
 635
 00:43:32,360 --> 00:43:36,820
@@ -1244,12 +1243,12 @@ at "foobar.mit.edu"
 00:43:39,840 --> 00:43:42,960
 That's probably something more
 common, if you are using some
-如果你的远程机器有个域名的话 
+这会是更为常见的情况 
 
 638
 00:43:42,960 --> 00:43:47,260
 remote server that has a DNS name.
-这种情况可能会更常见
+你的远程机器可能有个域名
 
 639
 00:43:48,180 --> 00:43:51,860
@@ -1275,7 +1274,7 @@ And now we're there. We have...
 643
 00:43:59,480 --> 00:44:02,629
 we're still in our same terminal emulator
-我们仍然在我们自己的终端模拟器里
+我们仍然在自己的终端模拟器里
 
 644
 00:44:02,630 --> 00:44:09,529
@@ -1305,7 +1304,7 @@ SSH, that were briefly covered in the
 00:44:23,220 --> 00:44:27,080
 data wrangling lecture, is that
 SSH is not only good for just
-曾在数据挖掘（？）一课中简要提到过
+曾在数据整理一课中简要提到过
 ssh 不止很适合连接
 
 649
@@ -1362,7 +1361,7 @@ this will work and we'll just
 659
 00:45:03,600 --> 00:45:06,100
 drop all this output and then have a local pipe
-我们可以把输出丢掉
+我们可以把远端的输出放进本地的管道
 
 660
 00:45:06,100 --> 00:45:07,879
@@ -1388,7 +1387,7 @@ It's we can use something called "SSH keys".
 664
 00:45:17,140 --> 00:45:20,660
 SSH keys just use public key encryption
-SSH 密钥就是用了公钥加密的算法
+SSH 密钥使用了非对称加密
 
 665
 00:45:20,660 --> 00:45:24,980
@@ -1407,7 +1406,7 @@ public part of the key.
 00:45:29,320 --> 00:45:32,810
 So you copy the public key and
 then whenever you try to
-把公钥复制过去
+把公钥复制过去以后
 
 668
 00:45:33,390 --> 00:45:37,129
@@ -1449,7 +1448,7 @@ me where I want this key to live.
 674
 00:45:58,980 --> 00:46:00,640
 Unsurprisingly, it's doing this.
-它这样做并不令人惊奇
+它这样做很符合预期
 
 675
 00:46:00,640 --> 00:46:04,820
@@ -1462,7 +1461,7 @@ it's using this ".ssh" path,
 00:46:05,460 --> 00:46:08,750
 which refers back to the same concept
 that we covered earlier about having
-这与我们刚刚提到的 dotfile 的概念是一致的
+这与我们刚刚提到的点文件的概念是一致的
 
 677
 00:46:08,850 --> 00:46:12,439
@@ -1475,7 +1474,7 @@ that contains a lot of the
 configuration files for how
 you want SSH to behave.
 配置文件的文件夹
-你用这些文件控制 SSH 的行为
+这些文件控制 SSH 的行为
 
 679
 00:46:17,060 --> 00:46:19,420
@@ -1571,8 +1570,8 @@ we're authorized to SSH there
 00:47:32,260 --> 00:47:38,400
 is by just actually copying this file,
 like copying this string into a file,
-只要把这个文件拷进去就行
-比如把这个字符串放进一个文件
+只要把公钥复制到
+比如复制进一个文件
 
 695
 00:47:38,400 --> 00:47:41,540
@@ -1610,7 +1609,7 @@ of the standard input
 701
 00:48:02,080 --> 00:48:05,220
 into ".ssh/authorized_keys".
-写到 .ssh/authorized_keys 里
+转存到 .ssh/authorized_keys 里
 
 702
 00:48:05,440 --> 00:48:10,360
@@ -1987,12 +1986,13 @@ that here, for example, we'll have tmux and we can,
 00:52:31,760 --> 00:52:35,780
 like I was saying before, we
 can start editing some file
-就像我之前说的那样
+就像我之前说的
+可以在里面编辑文件
 
 769
 00:52:39,160 --> 00:52:44,500
 and we can start running some job.
-可以在里面运行一些任务
+还可以在里面运行一些任务
 
 770
 00:52:54,200 --> 00:52:56,180
@@ -2002,12 +2002,12 @@ For example, something like HTOP.
 771
 00:52:56,180 --> 00:52:58,720
 And this is running here, we can
-它在正常运作
+它在正常运作的时候
 
 772
 00:52:59,320 --> 00:53:01,320
 detach from it,
-而我们可以暂时离开它
+我们可以暂时离开它
 
 773
 00:53:01,430 --> 00:53:03,430
@@ -2068,7 +2068,7 @@ trying to use tmux in your local machine,
 00:53:44,880 --> 00:53:47,640
 and also trying to use tmux
 in the remote machine?
-也在远程的机器上使用 tmux
+也在远程机器上使用 tmux
 
 783
 00:53:48,400 --> 00:53:50,760
@@ -2191,7 +2191,7 @@ feedback about where you are, or
 00:55:06,880 --> 00:55:10,240
 if you have a nested session. Also, tmux will,
 在你堆叠了很多 tmux 的时候很好用
-此外 tmux 还会
+此外
 
 805
 00:55:10,520 --> 00:55:15,280
@@ -2203,7 +2203,7 @@ try to tmux within a tmux session,
 00:55:15,290 --> 00:55:18,759
 it will kind of prevent you from doing
 it so you don't run into issues.
-阻止你这样做 以避免出现问题
+它会阻止你这样做 以避免出现问题
 
 807
 00:55:21,700 --> 00:55:25,400
